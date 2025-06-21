@@ -253,6 +253,7 @@ class NinjutsuPlugin(Star):
     async def cmd_ninjutsu(self, event: AstrMessageEvent):
         """处理'释放忍术'命令"""
         # 获取用户输入的忍术名称
+        logger.debug(f"用户输入: {event.message_str.strip()}")  # 新增的日志记录
         ninjutsu_name = event.message_str.replace("/释放忍术", "").strip()
 
         # 如果没有输入忍术名称
