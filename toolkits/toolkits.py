@@ -65,7 +65,7 @@ async def test():
 
     # 测试2: 释放有效忍术
     print("\n=== 测试2: 释放有效忍术 ===")
-    await run_plugin_command(plugin, "/释放忍术 1313112")
+    await run_plugin_command(plugin, "/释放忍术 爱音soyo")
 
     # 测试3: 释放无效忍术
     print("\n=== 测试3: 释放无效忍术 ===")
