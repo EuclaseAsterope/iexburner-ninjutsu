@@ -262,7 +262,7 @@ class NinjutsuPlugin(Star):
         if input_text.startswith(cmd_name):
             params = input_text[len(cmd_name):].strip()
             if not params:
-                yield event.plain_result("杂鱼下忍，连这种忍术都不会释放吗，杂鱼杂鱼")
+                yield event.plain_result("杂鱼下忍，连忍术都不会释放吗，杂鱼杂鱼")
                 return
             ninjutsu_name = params.lower().replace(" ","")
         else:
