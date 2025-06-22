@@ -1,6 +1,6 @@
-name: astrbot_plugin_ninjutsu # 这是你的插件的唯一识别名。
-desc: 基于鬼畜音源活字印刷的AstrBot语音播放插件，支持对应文本播放语音 # 插件的描述信息。
+name: iexburner_ninjutsu # 这是你的插件的唯一识别名。
+desc: 基于蕾忍宗的AstrBot语音播放插件，支持对应文本播放语音 # 插件的描述信息。
 help: 输入 /释放忍术 藏经阁 查看忍术列表。 # 插件的帮助信息
 version: v1.0.0 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: EuclaseAsterope 作者
+author: Euclase-Asterope """并非作者"""
 repo: https://github.com/EuclaseAsterope/Iexburner-ninjutsu# 插件的仓库地址
