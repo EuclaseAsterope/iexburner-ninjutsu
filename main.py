@@ -282,15 +282,18 @@ class NinjutsuPlugin(Star):
             yield event.plain_result("杂鱼下忍，连这种忍术都不会释放吗，杂鱼杂鱼")
             return
         if ninjutsu_name not in list(self.ninjutsu_mapping.keys()):
-            yield event.plain_result("杂鱼下忍，连这种简单的忍术都需要我帮你释放吗，杂鱼杂鱼")
-            return
-        # 藏经阁特殊功能
-        if ninjutsu_name == "藏经阁":
-            ninjutsu_list = ["📜 忍术藏经阁 📜",
-                             "记载的所有忍术如下："]
-            ninjutsu_list.extend([f"· {name}" for name in self.ninjutsu_mapping.keys()])
-            yield event.plain_result("\n".join(ninjutsu_list))
-            return
+            if ninjutsu_name == "藏经阁":
+                ninjutsu_list = ["📜 忍术藏经阁 📜",
+                                 "记载的所有忍术如下："]
+                ninjutsu_list.extend([f"· {name}" for name in self.ninjutsu_mapping.keys()])
+                yield event.plain_result("\n".join(ninjutsu_list))
+                return
+                # 藏经阁特殊功能
+            else:
+                yield event.plain_result("杂鱼下忍，连这种简单的忍术都需要我帮你释放吗，杂鱼杂鱼")
+                return
+
+
 
         # 获取对应的音频文件路径
         audio_file = os.path.join(self.sources_dir, self.ninjutsu_mapping[ninjutsu_name])
